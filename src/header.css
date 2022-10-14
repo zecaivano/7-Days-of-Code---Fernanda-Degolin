@@ -1,0 +1,46 @@
+header {
+    position: relative;
+    top: 70px;
+    margin: -50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+.header-esquerda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-centro {
+    display: flex;
+}
+.p-header {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header-direita {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.item-header-direita {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.header-user {
+    display: flex;
+    align-items: center;
+}
+.user {
+    margin-right: 10px;
+}

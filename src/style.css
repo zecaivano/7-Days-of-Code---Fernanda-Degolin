@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url(header.css);
+
+* {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+.app__background {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.9) 5%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(0, 0, 0, 0.2) 80%,
+            rgba(0, 0, 0, 0.8) 100%), url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.logo-filme {
+    background-image: url(../img/poster1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 25vh;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.logo-filme__descricao {
+    position: relative;
+    top: 220px;
+    display: block;
+    width: 70%;
+}
+
+.botao {
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    top: 250px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.botao-assistir {
+    color: black;
+}
+
+.botao-info {
+    background-color: rgba(256, 256, 256, 0.2);
+}
+
+.botao-play {
+    width: 14px;
+    margin-right: 3px;
+}
+
+.secoes {
+    padding: 0 50px;
+}
+
+.minha-lista {
+    background-color: transparent;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    opacity: 80%;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imagem {
+    display: block;
+    width: 19%;
+    height: 15%;
+    margin-right: 10px;
+}
+
+.imagem:hover {
+    width: 38%;
+    height: 38%;
+    z-index: 1;
+    margin: -30px;
+}
+
+.em-alta {
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    opacity: 80%;
+}
+
+#estrangeiras {
+    margin-bottom: -50px;
+}
+
+.contain {
+    width: 100%;
+}
+
+.row {
+    overflow: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.row__inner {
+    transition: 450ms transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+
+.tile {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 140px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.tile__img {
+    width: 250px;
+    height: 140px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.tile:hover {
+    opacity: 1;
+}
+
+.row__inner:hover {
+    transform: translate3d(-62.5px, 0, 0);
+}
+
+.row__inner:hover .tile {
+    opacity: 0.3;
+}
+
+.row__inner:hover .tile:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.tile:hover~.tile {
+    transform: translate3d(125px, 0, 0);
+}
