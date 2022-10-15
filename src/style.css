@@ -170,3 +170,44 @@ body {
 .tile:hover~.tile {
     transform: translate3d(125px, 0, 0);
 }
+
+footer {
+    margin-top: -50px;
+    margin-left: 5px;
+}
+.rodape__container-icons {
+    display: flex;
+}
+.rodape__container-icons li {
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.rodape__container-tabela {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.rodape__container-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__container-coluna li {
+    opacity: 40%;
+    list-style-type: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.rodape__container-coluna li:hover {
+    text-decoration: underline;
+    opacity: 100%;
+}
+.copy {
+    font-size: 12px;
+    margin:20px 0 20px 40px;
+    opacity: 40%;
+}
