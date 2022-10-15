@@ -119,7 +119,6 @@ body {
 
 .row {
     overflow: hidden;
-    overflow-y: hidden;
     width: 100%;
 }
 
@@ -175,9 +174,11 @@ footer {
     margin-top: -50px;
     margin-left: 5px;
 }
+
 .rodape__container-icons {
     display: flex;
 }
+
 .rodape__container-icons li {
     list-style-type: none;
     margin-right: 20px;
@@ -204,10 +205,27 @@ footer {
 
 .rodape__container-coluna li:hover {
     text-decoration: underline;
-    opacity: 100%;
 }
+
+.link-content__service {
+    margin: 20px 0 20px 40px;
+    font-size: 13px;
+}
+
+.link-content__service-code {
+    background: 0 0;
+    color: grey;
+    border: solid 1px grey;
+    padding: 0.5rem;
+}
+
+.link-content__service-code:hover {
+    color: white;
+    border: solid 1px white;
+}
+
 .copy {
     font-size: 12px;
-    margin:20px 0 20px 40px;
+    margin: 20px 0 20px 40px;
     opacity: 40%;
 }
